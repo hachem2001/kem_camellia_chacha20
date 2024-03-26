@@ -3,13 +3,12 @@
 ## IMPORTS
 
 from cryptography.hazmat.primitives.asymmetric import x25519
-import secrets
 from string import hexdigits as string_hexdigits
 import sys # For reading arguments, etc
 
-import KEM
-import hash_elgamal
-from KEM import DEBUG
+import deps.KEM as KEM
+import deps.hash_elgamal as hash_elgamal
+from deps.KEM import DEBUG
 
 ## MAIN
 

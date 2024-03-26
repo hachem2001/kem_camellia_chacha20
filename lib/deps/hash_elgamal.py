@@ -1,9 +1,8 @@
 from cryptography.hazmat.primitives.asymmetric import x25519
 from cryptography.hazmat.primitives.serialization import Encoding, PrivateFormat, PublicFormat, NoEncryption
 
-import symmetric
-import KEM
-from KEM import DEBUG
+import deps.symmetric as symmetric
+import deps.KEM as KEM
 
 # PKE
 def public_key_encrypt(message : bytes, public_bytes : bytes, randomness : bytes, iv : bytes = None) -> bytes:

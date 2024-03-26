@@ -6,8 +6,8 @@ from cryptography.hazmat.primitives.asymmetric import x25519
 from cryptography.hazmat.primitives.serialization import Encoding, PrivateFormat, PublicFormat, NoEncryption
 import secrets # random is not secure enough
 import sys, os # For reading arguments, etc
-import KEM
-from KEM import DEBUG
+import deps.KEM as KEM
+from deps.KEM import DEBUG
 
 ## MAIN
 

@@ -1,6 +1,4 @@
-/.vscode
-/README.md
-/__pycache__
-/encaps
-/lib
-/pk.key
+.vscode
+__pycache__
+*.key
+.venv
